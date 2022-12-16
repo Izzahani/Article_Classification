@@ -12,6 +12,7 @@ from sklearn.metrics import confusion_matrix, classification_report, accuracy_sc
 from tensorflow.keras.callbacks import TensorBoard, EarlyStopping
 import os
 import datetime
+import pickle, json
 
 # %% Step 1) Loading data
 df = pd.read_csv('https://raw.githubusercontent.com/susanli2016/PyCon-Canada-2019-NLP-Tutorial/master/bbc-text.csv')
@@ -121,6 +122,18 @@ y_pred = np.argmax(y_pred, axis=1)
 y_true = np.argmax(y_test,axis=1)
 
 print(classification_report(y_true, y_pred))
-# %%
 
-# %% Data Saving
+# %% Model Saving
+
+token_json = tokenizer.to_json()
+with open('tokenizer.json', 'w') as f:
+    json.dump(token_json, f)
+
+# %% save ohe
+
+with open('ohe.pkl', 'wb') as f:
+    pickle.dump(ohe,f)
+
+# %% save deep learning model
+
+model.save('model sentiment analysis.h5')
