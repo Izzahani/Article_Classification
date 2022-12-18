@@ -38,23 +38,24 @@
    <ol>- Tokenizers is being used in this part to convert the text into numerical.</ol>
    <ol>- I have used train sequences to convert the text to horizontal.</ol>
    <ol> <strong>For target:</strong></ol>
-   <ol>- One Hot Encoder is being used to convert the outputs into numerical. </ol>
+   <ol>- One Hot Encoder is being used to convert the outputs into numerical. 5 outputs need to be converted which are Sport, Tech, Business, Entertainment and 
+Politics. </ol>
    
- <p>Finally, <strong>Model Development</strong> can be done if all of the steps above has already finished.</p>
+ <p>Finally, once all of the above steps have been completed, <strong>model development</strong> can begin.</p>
  <p> In Model Development, I did train-test split. Then, i used Embedding as an input layer. For hidden layers, I used LSTM, Dropout and Bidirectional.</p>
  <p>I used Bidirectional LSTMs because it can imporove my model performance.</p>
-  <img src="https://github.com/Izzahani/Article_Classification/blob/main/model.png" alt="descriptive text">
+   <p align="center"><img src="https://github.com/Izzahani/Article_Classification/blob/main/model.png" alt="descriptive text">
  
  <p> Then, the project is being compiled. The result as shown in the picture below:</p>
- <img src="https://github.com/Izzahani/Article_Classification/blob/main/prediction.png" alt="descriptive text">
- <pThe f1-score for accuracy based on the image is 81%. However, eliminating stop words can increase accuracy. Additionally, adding another dense layer might increase accuracy as well. </p>
+  <p align="center"><img src="https://github.com/Izzahani/Article_Classification/blob/main/prediction.png" alt="descriptive text">
+ <div align="center"><ol>The f1-score for accuracy based on the image is 81%. However, eliminating stop words can increase accuracy. Additionally, adding another dense layer might increase accuracy as well.</ol></div>
  
  <p>For Epoch Acc</p>
- <img src="https://github.com/Izzahani/Article_Classification/blob/main/epoch_acc.png" alt="epoch acc">
- <p>According to the graph, the train model was coloured green. Between 1.5 and 2, the model started to get overfitted. Perhaps the Bidrectional LSTM layer is at cause. But when it reached to 2, it started to get close to optimum. So maybe the dropout layer is the reason. But at 3, it became overfitted again. I might need to add another dropout layer to reached the good git graph.</p>
+  <p align="center"><img src="https://github.com/Izzahani/Article_Classification/blob/main/epoch_acc.png" alt="epoch acc">
+ <div align="center"><ol>According to the graph, the train model was coloured green. Between 1.5 and 2, the model started to get overfitted. Perhaps the Bidrectional LSTM layer is at cause. But when it reached to 2, it started to get close to optimum. So maybe the dropout layer is the reason. But at 3, it became overfitted again. I might need to add another dropout layer to reached the good git graph.</ol></div>
 
  <p>For Epoch Loss</p>
- <img src="https://github.com/Izzahani/Article_Classification/blob/main/epoch_loss.png" alt="epoch loss">
+  <p align="center"><img src="https://github.com/Izzahani/Article_Classification/blob/main/epoch_loss.png" alt="epoch loss">
  
 ## Acknowledgement
 Special thanks to [(https://raw.githubusercontent.com/susanli2016/PyCon-Canada-2019-NLP-Tutorial/master/bbc-text.csv)](https://raw.githubusercontent.com/susanli2016/PyCon-Canada-2019-NLP-Tutorial/master/bbc-text.csv) :smile:
