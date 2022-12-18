@@ -47,11 +47,11 @@
  
  <p> Then, the project is being compiled. The result as shown in the picture below:</p>
  <img src="https://github.com/Izzahani/Article_Classification/blob/main/prediction.png" alt="descriptive text">
- <p>Based on the picture, f1-score for accuracy is 81%. However, the accuracy can be improve by cleaning up stop words. Besides that, adding dense layer can also imporove the accuracy. </p>
+ <pThe f1-score for accuracy based on the image is 81%. However, eliminating stop words can increase accuracy. Additionally, adding another dense layer might increase accuracy as well. </p>
  
  <p>For Epoch Acc</p>
  <img src="https://github.com/Izzahani/Article_Classification/blob/main/epoch_acc.png" alt="epoch acc">
- <p>Based on the graph, the train model was in green colour. The model started to overfitted in between 1.5 and 2. It might be due Bidrectional LSTM layer. However, it started to reach ideal when it reached 2. It might be due to the dropout layer. But it went overfitting at 3.</p>
+ <p>According to the graph, the train model was coloured green. Between 1.5 and 2, the model started to get overfitted. Perhaps the Bidrectional LSTM layer is at cause. But when it reached to 2, it started to get close to optimum. So maybe the dropout layer is the reason. But at 3, it became overfitted again. I might need to add another dropout layer to reached the good git graph.</p>
 
  <p>For Epoch Loss</p>
  <img src="https://github.com/Izzahani/Article_Classification/blob/main/epoch_loss.png" alt="epoch loss">
