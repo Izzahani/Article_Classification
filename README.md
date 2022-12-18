@@ -43,16 +43,16 @@
  <p>Finally, <strong>Model Development</strong> can be done if all of the steps above has already finished.</p>
  <p> In Model Development, I did train-test split. Then, i used Embedding as an input layer. For hidden layers, I used LSTM, Dropout and Bidrectional.</p>
  <p>I used Bidirectional LSTMs because it can imporove my model performance.</p>
-  <img src="https://github.com/Izzahani/Text_Classification/blob/main/Predictions1.png" alt="descriptive text">
+  <img src="https://github.com/Izzahani/Article_Classification/blob/main/model.png" alt="descriptive text">
  
  <p> Then, the project is being compiled. The result as shown in the graph below:</p>
- <img src="https://github.com/Izzahani/Text_Classification/blob/main/Predictions1.png" alt="descriptive text">
+ <img src="https://github.com/Izzahani/Article_Classification/blob/main/prediction.png" alt="descriptive text">
  <p>These are the graph I got from TensorBoard</p>
  <p>For Epoch Acc</p>
- <img src="https://github.com/Izzahani/Text_Classification/blob/main/epoch_acc.png" alt="descriptive text">
+ <img src="https://github.com/Izzahani/Article_Classification/blob/main/epoch_acc.png" alt="epoch acc">
 
  <p>For Epoch Loss</p>
- <img src="https://github.com/Izzahani/Article-Classification/blob/main/epoch_loss.png" alt="epoch loss">
+ <img src="https://github.com/Izzahani/Article_Classification/blob/main/epoch_loss.png" alt="epoch loss">
  
 ## Acknowledgement
 Special thanks to [(https://raw.githubusercontent.com/susanli2016/PyCon-Canada-2019-NLP-Tutorial/master/bbc-text.csv)](https://raw.githubusercontent.com/susanli2016/PyCon-Canada-2019-NLP-Tutorial/master/bbc-text.csv) :smile:
