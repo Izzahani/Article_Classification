@@ -41,15 +41,17 @@
    <ol>- One Hot Encoder is being used to convert the outputs into numerical. </ol>
    
  <p>Finally, <strong>Model Development</strong> can be done if all of the steps above has already finished.</p>
- <p> In Model Development, I did train-test split. Then, i used Embedding as an input layer. For hidden layers, I used LSTM, Dropout and Bidrectional.</p>
+ <p> In Model Development, I did train-test split. Then, i used Embedding as an input layer. For hidden layers, I used LSTM, Dropout and Bidirectional.</p>
  <p>I used Bidirectional LSTMs because it can imporove my model performance.</p>
   <img src="https://github.com/Izzahani/Article_Classification/blob/main/model.png" alt="descriptive text">
  
- <p> Then, the project is being compiled. The result as shown in the graph below:</p>
+ <p> Then, the project is being compiled. The result as shown in the picture below:</p>
  <img src="https://github.com/Izzahani/Article_Classification/blob/main/prediction.png" alt="descriptive text">
- <p>These are the graph I got from TensorBoard</p>
+ <p>Based on the picture, f1-score for accuracy is 81%. However, the accuracy can be improve by cleaning up stop words. Besides that, adding dense layer can also imporove the accuracy. </p>
+ 
  <p>For Epoch Acc</p>
  <img src="https://github.com/Izzahani/Article_Classification/blob/main/epoch_acc.png" alt="epoch acc">
+ <p>Based on the graph, the train model was in green colour. The model started to overfitted in between 1.5 and 2. It might be due Bidrectional LSTM layer. However, it started to reach ideal when it reached 2. It might be due to the dropout layer. But it went overfitting at 3.</p>
 
  <p>For Epoch Loss</p>
  <img src="https://github.com/Izzahani/Article_Classification/blob/main/epoch_loss.png" alt="epoch loss">
