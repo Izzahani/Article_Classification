@@ -29,6 +29,8 @@
    <ol>- I used Regex to remove unwanted words which then leave only the words with alphabets A-Z</ol>
    <ol>- The alphabets are then all converted in lower case.</ol>
    <ol>- All of the duplicated data has been removed in this part as well.</ol>
+  
+<p>Additionally, it is critical to find out the average word length in each sentence because we need to choose the right length when declaring the maximum length during train sequences in order to improve accuracy.</p>
 
 <p>4. Features Selection</p>
    <ol>- In this part, I have to declare feature and target again by using other dataframe variable to avoid overwrite.</ol>
