@@ -53,13 +53,13 @@ print('Average Length of Words per Sentences: ' + str(np.mean(temp))) # to find 
 print('Middle Value Length of Words per Sentences: '+ str(np.median(temp))) #335
 # %%
 print(text[11])
-# %%
+
+# %% Step 4) Features Selection
 df1 = pd.concat([text,category], axis=1)
 df1 = df1.drop_duplicates()
 
 text = df1['text']
 category = df1['category']
-# %% Step 4) Features Selection
 
 # %% Step 5) Data Pre-processing
 # for features
